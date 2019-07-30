@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es6", /*Especifica qual versão alvo do ECMAScript para compilação*/
+        "module": "commonjs", /*Especifica geração de código do módulo*/
+        "moduleResolution": "node", /*Especifica estratégia de resolução do código (no caso, utilizando o node)*/
+        "sourceMap": false, /*Gera o arquivo .map*/
+        "declaration": false, /*Gera um sourcemap para cada arquivo .d.ts correspondente*/
+        "removeComments": true, /*Códigos compilados não carregam os comentários dos arquivos .ts*/
+        "noImplicitAny": true, /*Tipo any não pode ficar implícito na declaração de qualquer coisa*/
+        "noEmitOnError": true, /*Não gerará arquivo .js para o arquivo .ts que tiver erro de compilação*/
+        "outDir": "tests/e2e/js", /*Diretório destino do*/
+        "strictNullChecks": true, 
+        "experimentalDecorators": true, 
+        "noImplicitThis": true, /* Gera erro ao ter uma expressão this com tipo any implícito*/ 
+        "types": [
+            "jasmine",
+            "jasminewd2",
+            "node"
+        ], /*Arquivos de declaração do tipo @type também serão compilados*/
+        "lib": [
+            "dom",
+            "es2018"
+        ] /*Especifica arquivos de bibliotecas para incluir na compilação*/
+    }, 
+    "exclude": [
+        "node_modules"
+    ], /*Exclui os diretórios especificados na compilação*/
+    "include": [
+        "tests/e2e/ts/**/*"
+    ] /*Inclui os diretórios especificados na compilação*/
+} 

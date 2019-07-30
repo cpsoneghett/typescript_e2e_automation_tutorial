@@ -1,0 +1,6 @@
+# Os arquivos padrão do node não serão commitados
+node_modules
+package-lock.json
+
+# Os arquivos compilados não serão commitados
+tests/e2e/js
