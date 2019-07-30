@@ -13,7 +13,7 @@ O código completo para este tutorial está neste repositório. Algumas atualiza
 
 O tutorial abrange os seguintes tipos de páginas web:
 - [x] Páginas não-Angular 
-- [] Páginas Angular (Pendente)
+- [ ] Páginas Angular (Pendente)
 
 ----
 
@@ -33,7 +33,7 @@ The complete code for this tutorial is in this repository. Some updates will sti
 
 The tutorial covers the following types of web pages:
 - [x] non-Angular pages
-- [] Angular pages (will be created)
+- [ ] Angular pages (will be created)
 
 ----
 
