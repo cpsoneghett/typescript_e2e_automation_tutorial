@@ -1,5 +1,6 @@
-import { browser, element, by } from "protractor";
+import { browser } from "protractor";
 import { InicioPage } from "../pages/inicio.page";
+import { Reports } from "../components/reports.component";
 
 describe(' Teste cenário 01 - Validando elementos', () => {
 
@@ -8,6 +9,11 @@ describe(' Teste cenário 01 - Validando elementos', () => {
     beforeAll(() => {
         browser.get('');
     });
+
+    afterEach(function() {
+        Reports.tiraPrint();
+    });
+    
 
     it("Valida nome do título", () => {
 

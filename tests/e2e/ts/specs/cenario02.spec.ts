@@ -1,10 +1,13 @@
-import { browser } from "protractor";
 import { InicioPage } from "../pages/inicio.page";
+import { Reports } from "../components/reports.component";
 
 describe('Teste cenário 02 - Funcionalidades gerais', () => {
 
     var Inicio: InicioPage = new InicioPage(); //Declaramos uma instância da nossa página aqui!
 
+    afterEach(function () {
+        Reports.tiraPrint();
+    });
 
     it('Soma dois números (no caso, 1 e 3)', () => {
 
